@@ -1,0 +1,101 @@
+/* 🌸 Màu sắc mùa xuân */
+:root {
+    --spring-light-bg: #E8F5E9; /* Xanh lá cây nhạt */
+    --spring-light-text: #2E7D32; /* Xanh lá cây đậm */
+    --spring-dark-bg: #1B5E20; /* Xanh lá cây đậm hơn */
+    --spring-dark-text: #C8E6C9; /* Xanh lá cây sáng */
+    --btn-bg: #FFEB3B; /* Màu vàng hoa mai */
+    --btn-text: #795548; /* Nâu đất */
+}
+
+/* 🌸 Áp dụng theme sáng */
+.light {
+    --bg-color: var(--spring-light-bg);
+    --text-color: var(--spring-light-text);
+}
+
+/* 🌸 Áp dụng theme tối */
+.dark {
+    --bg-color: var(--spring-dark-bg);
+    --text-color: var(--spring-dark-text);
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+    background-image: url("/public/muaxuan333.jpg"); /* 🌿 Hình nền mùa xuân */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ngăn ảnh bị lặp */
+    background-attachment: fixed;
+}
+
+/* 🌸 Khung chứa chính */
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Lớp nền mờ */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+/* 🌸 Tiêu đề */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* 🌸 Nút chuyển đổi theme */
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FFD700; /* Màu vàng sáng hơn */
+}
+
+/* 🌸 Ô nhập công việc */
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border: 2px solid var(--spring-light-text);
+    border-radius: 5px;
+}
+
+/* 🌸 Danh sách công việc */
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+/* 🌸 Check công việc hoàn thành */
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* 🌸 Công việc đã hoàn thành */
+span {
+    font-size: 16px;
+}
+
+span.completed {
+    text-decoration: line-through;
+    color: gray;
+}
