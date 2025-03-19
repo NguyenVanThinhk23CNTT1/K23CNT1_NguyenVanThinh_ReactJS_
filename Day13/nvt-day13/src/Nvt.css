@@ -1,0 +1,101 @@
+/* Nền giáng sinh */
+body {
+    background-image: url(https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* Khung chứa nội dung */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Tiêu đề chính */
+h1 {
+    color: #d92027;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Tiêu đề phụ */
+h2 {
+    color: #1b9c85;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Bảng hiển thị dữ liệu */
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.table th {
+    background: #d92027;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 12px;
+}
+.table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Button */
+button {
+    background: linear-gradient(45deg, #d92027, #ff4f00);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+button:hover {
+    background: linear-gradient(45deg, #ff4f00, #d92027);
+    transform: scale(1.05);
+}
+
+/* Form nhập dữ liệu */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Radio button */
+input[type="radio"] {
+    margin: 0 5px;
+}
+
+/* Hiệu ứng tuyết rơi */
+@keyframes snow {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(100vh); }
+}
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    opacity: 0.9;
+    font-size: 1.5em;
+    user-select: none;
+    animation: snow 10s linear infinite;
+}
